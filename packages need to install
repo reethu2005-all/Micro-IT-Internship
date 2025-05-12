@@ -1,0 +1,33 @@
+📦 Explanation of Packages
+Package	Version	Description
+requests	2.31.0	For sending HTTP requests to the currency exchange API.
+pyttsx3	2.90	For text-to-speech functionality (offline, platform-independent).
+SpeechRecognition	3.10.0	For recognizing spoken voice input using Google Web Speech API.
+pyaudio	0.2.13	Required by SpeechRecognition to access the system microphone (record audio).
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+requests==2.31.0
+pyttsx3==2.90
+SpeechRecognition==3.10.0
+pyaudio==0.2.13
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+On Windows, installing pyaudio might require precompiled wheels. If you get errors, use:
+
+bash
+Copy
+Edit
+pip install pipwin
+pipwin install pyaudio
+On Linux, you may need to install portaudio before installing PyAudio:
+
+bash
+Copy
+Edit
+sudo apt-get install portaudio19-dev
+pip install pyaudio
+On macOS, use:
+
+bash
+Copy
+Edit
+brew install portaudio
+pip install pyaudio
